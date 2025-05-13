@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Type Generator</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link id="google-font-link" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="controls">
+    <div class="input-group">
+      <label for="min-width">Min Width (px):</label>
+      <input type="number" id="min-width" value="320">
+    </div>
+    <div class="input-group">
+      <label for="min-font-size">Min Font Size (px):</label>
+      <input type="number" id="min-font-size" value="16">
+    </div>
+    <div class="input-group">
+      <label for="max-width">Max Width (px):</label>
+      <input type="number" id="max-width" value="1200">
+    </div>
+    <div class="input-group">
+      <label for="max-font-size">Max Font Size (px):</label>
+      <input type="number" id="max-font-size" value="24">
+    </div>
+    <div class="input-group">
+      <label for="font-family">Font Family:</label>
+      <select id="font-family"></select>
+    </div>
+    <div class="input-group">
+      <label for="font-weight">Font Weight:</label>
+      <select id="font-weight">
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+        <option value="400" selected>400</option>
+        <option value="500">500</option>
+        <option value="600">600</option>
+        <option value="700">700</option>
+        <option value="800">800</option>
+        <option value="900">900</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="text-color">Text Color (Hex):</label>
+      <input type="text" id="text-color" value="#000000">
+    </div>
+    <div class="input-group">
+      <label for="html-tag">HTML Tag:</label>
+      <select id="html-tag">
+        <option value="p" selected>p</option>
+        <option value="H1">H1</option>
+        <option value="H2">H2</option>
+        <option value="H2">H2</option>
+        <option value="H4">H4</option>
+        <option value="H5">H5</option>
+        <option value="H6">H6</option>
+      </select>
+    </div>
+  </div>
+  <div class="preview">
+    <p id="preview-text">The quick brown fox jumps over the lazy dog.</p>
+  </div>
+  <div class="output">
+    <h2>Generated CSS:</h2>
+    <pre><code id="css-output">/* CSS will be generated here */</code></pre>
+    <button id="copy-button">Copy to Clipboard</button>
+  </div>
+</div>
+
+<script src="src/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #263141;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"],
+.input-group select,
+.input-group input[type="color"],
+button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.preview {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.preview p {
+  font-size: 1em; /* Initial font size */
+  line-height: 1.5;
+}
+
+.output h2 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.output pre {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.output code {
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #222;
+  display: block; /* Ensures proper wrapping */
+  white-space: pre-wrap; /* Enables line breaks */
+}
