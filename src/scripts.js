@@ -69,7 +69,7 @@ function hexToHsl(hex) {
 }
 
 function formatNumber(number) {
-    const numStr = number.toString();
+    const numStr = number.toFixed(4); // First, limit to 4 decimal places
     if (numStr.includes('.')) {
         return numStr.replace(/(\.0+|0+)$/, '');
     }
@@ -125,14 +125,6 @@ function copyToClipboard() {
             console.error('Failed to copy text: ', err);
             alert('Failed to copy CSS to clipboard.');
         });
-}
-
-function formatNumber(number) {
-    const numStr = number.toFixed(4); // First, limit to 4 decimal places
-    if (numStr.includes('.')) {
-        return numStr.replace(/(\.0+|0+)$/, '');
-    }
-    return numStr;
 }
 
 // Initial font population
