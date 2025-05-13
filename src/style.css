@@ -1,14 +1,14 @@
 body {
   font-family: sans-serif;
   margin: 20px;
-  background-color: #263141;
+  background-color: hsl(216, 26%, 20%);
 }
 
 .container {
-  max-width: 960px;
+  width: min(1000px, 100% - 2rem);
   margin: 0 auto;
   background-color: #fff;
-  padding: 20px;
+  padding: 3.5rem 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -43,12 +43,18 @@ button {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1em;
+  background-color: #fff;
+}
+
+button {
+  padding: .5rem 1rem;
+  background-color: hsl(216, 26%, 75%);
 }
 
 .preview {
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: hsl(216, 0%, 95%);
   border: 1px solid #eee;
   border-radius: 4px;
 }
@@ -65,7 +71,7 @@ button {
 }
 
 .output pre {
-  background-color: #eee;
+  background-color: hsl(216, 0%, 95%);;
   padding: 15px;
   border-radius: 4px;
   overflow-x: auto;
